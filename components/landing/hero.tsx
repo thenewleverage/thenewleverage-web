@@ -46,7 +46,7 @@ export function Hero() {
                 flexShrink: 0,
               }}
             />
-            IDEABUILD — SINGAPORE — MAY 2025
+            IDEABUILD — SINGAPORE — MAY 2026
           </div>
 
           {/* H1 */}

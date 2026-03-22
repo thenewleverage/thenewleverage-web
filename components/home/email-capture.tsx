@@ -34,7 +34,7 @@ export function EmailCapture() {
           color: "#B8942A",
         }}
       >
-        YOU'RE ON THE LIST.
+        YOU&apos;RE ON THE LIST.
       </div>
     );
   }

@@ -105,7 +105,7 @@ Colour palette:
 ### 5.2 Hero Section
 - Two-column grid: left (content) | right (registration summary card)
 - Left column:
-  - Eyebrow: "IDEABUILD — SINGAPORE — MAY 2025"
+  - Eyebrow: "IDEABUILD — SINGAPORE — MAY 2026"
   - H1 (Cormorant, ~5rem, weight 300): "You walk in with an *idea.*\nYou walk out with an *app.*"
   - Subheading (DM Sans, 17px, weight 300): "A one-day workshop for senior professionals who have a business idea — and no time to wait for someone else to build it."
   - Meta row: three items — DATE | LOCATION | PRICE — in mono label + value format
@@ -258,7 +258,7 @@ Colour palette:
 - Seats note below button
 
 ### 5.11 Footer
-- Minimal: "© 2025 The New Leverage" left | "Singapore" right
+- Minimal: "© 2026 The New Leverage" left | "Singapore" right
 - Both in DM Mono, small, muted
 
 ---

@@ -26,7 +26,7 @@ export function Footer() {
             letterSpacing: "0.06em",
           }}
         >
-          © 2025 The New Leverage
+          © 2026 The New Leverage
         </span>
         <span
           style={{
