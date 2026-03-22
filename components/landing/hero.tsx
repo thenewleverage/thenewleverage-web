@@ -83,8 +83,8 @@ export function Hero() {
           {/* Meta row */}
           <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}>
             {[
-              { label: "DATE", value: "Saturday, May 2025" },
-              { label: "LOCATION", value: "Singapore" },
+              { label: "DATE", value: "Saturday, 23 May 2026" },
+              { label: "LOCATION", value: "Singapore CBD" },
               { label: "INVESTMENT", value: "S$2,000" },
             ].map(({ label, value }) => (
               <div key={label} style={{ display: "flex", flexDirection: "column", gap: "4px" }}>

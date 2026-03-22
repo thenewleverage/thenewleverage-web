@@ -166,7 +166,7 @@ export default async function PaymentPage({ searchParams }: Props) {
               letterSpacing: "0.06em",
             }}
           >
-            Founding cohort · May 2025 · Singapore
+            Founding cohort · 23 May 2026 · Singapore CBD
           </div>
         </div>
 

@@ -187,8 +187,8 @@ export function SummaryCard() {
           }}
         >
           {[
-            { label: "DATE", value: "Saturday, May 2025" },
-            { label: "LOCATION", value: "Singapore" },
+            { label: "DATE", value: "Saturday, 23 May 2026" },
+            { label: "LOCATION", value: "Singapore CBD" },
             { label: "FORMAT", value: "Full day, 9am – 6pm" },
           ].map(({ label, value }) => (
             <div
