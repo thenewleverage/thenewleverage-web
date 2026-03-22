@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark ink background with slight rounding -->
+  <rect width="32" height="32" rx="5" fill="#1A1A14"/>
+  <!-- Lever bar -->
+  <line x1="5" y1="15" x2="27" y2="15" stroke="#B8942A" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Fulcrum triangle -->
+  <polygon points="16,15 11.5,24 20.5,24" fill="#B8942A"/>
+  <!-- Weight on left side (suggesting imbalance / leverage in action) -->
+  <rect x="5" y="11" width="5" height="4" rx="1" fill="#B8942A"/>
+</svg>

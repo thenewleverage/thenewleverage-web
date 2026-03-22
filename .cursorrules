@@ -1,0 +1,53 @@
+# The New Leverage — Cursor Rules
+
+## Project Overview
+Marketing website and registration system for IdeaBuild, a premium one-day AI workshop
+for senior finance professionals in Singapore. Built with Next.js 15 App Router, Supabase,
+and Resend. Design aesthetic: minimalist, editorial, luxury — Cormorant Garamond + DM Sans.
+
+## Tech Stack
+- Framework: Next.js 15 App Router
+- Language: TypeScript (strict mode)
+- Database: Supabase (PostgreSQL)
+- Auth: Supabase Auth (admin only)
+- Styling: Tailwind CSS + shadcn/ui
+- Forms: React Hook Form + Zod
+- Email: Resend
+- Payment: Stripe (placeholder)
+
+## Design System
+- Primary font: Cormorant Garamond (display/headings) — always weight 300 for large headings
+- Body font: DM Sans
+- Mono font: DM Mono (labels, eyebrows, timestamps)
+- Gold accent: #B8942A — use sparingly, never on large areas
+- Page bg: #FAFAF7 (cream)
+- All section max-width: 1100px, centered
+- No gradients. No pill buttons (border-radius: 2px on buttons). No drop shadows except subtle card lift.
+- Eyebrow labels: DM Mono, 10-11px, 0.18em letter-spacing, uppercase, gold
+- Section padding: 100px vertical desktop, 60px mobile
+
+## Component Strategy
+- Server Components by default
+- 'use client' only for: forms, interactive states, scroll listeners
+- Never fetch data in Client Components
+- Use Server Actions for all mutations
+
+## Anti-Patterns
+- Never use purple gradients or generic AI aesthetics
+- Never use Inter or Roboto (use DM Sans only)
+- Never round buttons to pills
+- Never skip Zod validation on API routes
+- Never expose SUPABASE_SERVICE_ROLE_KEY to client
+- Never use inline styles for colors — use Tailwind classes with CSS variables
+
+## Forms
+- React Hook Form for all forms
+- Zod schemas in /lib/validations/
+- Always show inline validation errors on blur
+- Disable submit until form is valid
+
+## Database
+- All mutations via Server Actions or API routes
+- Never expose service role key to browser
+- Registration table uses public insert policy (no auth for form submission)
+- Admin routes use service role key server-side only
