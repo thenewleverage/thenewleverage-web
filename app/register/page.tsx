@@ -121,7 +121,8 @@ export default function RegisterPage() {
         throw new Error(result.error || "Server error");
       }
       
-      router.push("/register/payment?email=" + encodeURIComponent(data.email));
+      const firstName = data.full_name.split(' ')[0];
+      router.push(`/register/choose?name=${encodeURIComponent(firstName)}&email=${encodeURIComponent(data.email)}`);
     } catch (err) {
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong. Please try again.");
     } finally {

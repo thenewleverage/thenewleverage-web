@@ -10,7 +10,45 @@ interface Props {
 
 export default async function PaymentPage({ searchParams }: Props) {
   const { email } = await searchParams;
-  const confirmUrl = `/register/confirm${email ? `?email=${encodeURIComponent(email)}` : ""}`;
+
+  if (!email) {
+    return (
+      <div
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "120px 2rem 80px",
+          textAlign: "center",
+        }}
+      >
+        <div style={{ maxWidth: "480px" }}>
+          <p
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontSize: "16px",
+              fontWeight: 300,
+              color: "#3A3A35",
+              lineHeight: 1.7,
+              margin: "0 0 0.5rem 0",
+            }}
+          >
+            Something went wrong. Please email{" "}
+            <a
+              href="mailto:ideabuild@thenewleverage.com"
+              style={{ color: "#B8942A", textDecoration: "none" }}
+            >
+              ideabuild@thenewleverage.com
+            </a>{" "}
+            to complete your registration.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  const confirmUrl = `/register/confirm?email=${encodeURIComponent(email)}`;
 
   return (
     <div

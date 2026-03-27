@@ -89,7 +89,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 5. Return success
-    return NextResponse.json({ success: true, id: registration.id }, { status: 200 });
+    return NextResponse.json({ success: true, id: registration.id, name: data.full_name, email: data.email }, { status: 200 });
   } catch (err) {
     console.error("[register] Unexpected error:", err);
     return NextResponse.json(
