@@ -140,10 +140,10 @@ export default async function ChoosePage({ searchParams }: Props) {
           >
             Questions? Email{" "}
             <a
-              href="mailto:hello@thenewleverage.com"
+              href="mailto:ideabuild@thenewleverage.com"
               style={{ color: "#7A7A72", textDecoration: "underline" }}
             >
-              hello@thenewleverage.com
+              ideabuild@thenewleverage.com
             </a>
           </p>
         </div>
